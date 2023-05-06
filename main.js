@@ -16,6 +16,9 @@ function createWindow() {
 
   mainWindow.loadFile('index.html');
 
+  // Set the window to be always on top
+  mainWindow.setAlwaysOnTop(true);
+
   return mainWindow;
 }
 
@@ -34,6 +37,8 @@ app.whenReady().then(() => {
       mainWindow.hide();
     } else {
       mainWindow.show();
+      // Ensure the window is always on top when shown
+      mainWindow.setAlwaysOnTop(true);
     }
   });
 });

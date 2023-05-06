@@ -10,3 +10,4 @@ node_modules/
 .venv
 app.ipynb
 uploaded_files/
+out/
